@@ -1,0 +1,46 @@
+{
+  "name": "ccg-card-generator-sample-project",
+  "version": "1.1.2",
+  "description": "Easily generate pages of trading cards from JSON input",
+  "main": "scripts/createCards.js",
+  "scripts": {
+    "format": "pretty-quick --staged",
+    "build": "node --harmony scripts/createCards",
+    "watch": "node --harmony scripts/createCards"
+  },
+  "babel": {
+    "presets": [
+      "mcclowes"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "mcclowes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paragon-games/ccg-card-generator-sample-project.git"
+  },
+  "keywords": [
+    "ccg",
+    "tcg",
+    "generator",
+    "sample",
+    "project"
+  ],
+  "author": "Max Clayton Clowes <maxcc@me.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paragon-games/ccg-card-generator-sample-project/issues"
+  },
+  "homepage": "https://github.com/paragon-games/ccg-card-generator-sample-project#readme",
+  "dependencies": {
+    "ccg-card-generator": "^1.2.0",
+    "lodash": "^4.17.19",
+    "marked": "^0.4.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
